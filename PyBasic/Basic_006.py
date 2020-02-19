@@ -1,5 +1,5 @@
 
-print('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
+print('=-'*60)
 number = int(input('Número para conversão : '))
 conv = 0
 while (conv >3 or conv <1):
@@ -12,7 +12,9 @@ while (conv >3 or conv <1):
         print('Hexadecimal de {} = {}'.format(number,hex(number)[2:]))
     else:
          print('Opção invalida')
-print('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
+
+print('=-'*60)
+
 num = []
 soma = 0
 cont = 0
@@ -25,7 +27,7 @@ print("{}".format(num))
 print('Soma de multiplos de 3 no intervalo de 1 a 500 : {}'.format(soma))
 print('Quantidade de números : {}'.format(cont))
 
-print('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
+print('=-'*60)
 frase = str(input('Digite uma frase : ')).strip().upper()
 palavra = frase.split()
 junto = ''.join(palavra)
@@ -38,7 +40,8 @@ if junto == inverso:
 else:
     print('Não é palíndromo')
 
-print('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
+print('=-'*60)
+
 import random
 pessoa = []
 for n in range(0,5):
