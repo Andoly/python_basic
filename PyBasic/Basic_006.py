@@ -30,9 +30,22 @@ frase = str(input('Digite uma frase : ')).strip().upper()
 palavra = frase.split()
 junto = ''.join(palavra)
 inverso = ''
-for letra in range(len(junto)-1,-1,-1):
+for letra in range(len(junto) -1, -1, -1):
     inverso+=junto[letra]
+#print(frase[::-1]) não haveria necessidade das linhas 30 a 34
+if junto == inverso:
+    print('Palíndromo \n{} : {}'.format(junto, inverso))
+else:
+    print('Não é palíndromo')
 
-print(junto, inverso)
+print('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
+import random
+pessoa = []
+for n in range(0,5):
+    peso = random.randint(20,100)
+    pessoa.append(peso)
+    print('{}'.format(peso))
+print("Menor : {}".format(min(pessoa)))
+print("Maior : {}".format(max(pessoa)))
 
 
