@@ -4,9 +4,8 @@ while True:
     try:
         age = int(input('Digite a idade : '))
         if age < 0 and type(age) != int:
-            age = int(input('Digite a idade : '))
+            print('Idade invalida')
     except ValueError as e:
-        print('Idade invalida')
         age = int(input('Digite a idade : '))
 
     sex = ' '
