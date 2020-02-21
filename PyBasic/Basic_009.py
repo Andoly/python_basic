@@ -1,9 +1,7 @@
 from random import randint
 cont = 0
 
-def Playeing():
-    cont = 0
-
+while True:
     choice = str(input('IMPAR [I] ou PAR [P] ?')).strip()
     while choice not in 'IiPp':
         choice = str(input('IMPAR [I] ou PAR [P] ?'))
@@ -16,27 +14,31 @@ def Playeing():
     print('Número escolhido pelo a maquina : {}'.format(machine))
 
     game = player + machine
-    print('Soma : {}'.format(game))
 
     if game % 2 == 0 and choice in 'Pp':
         cont +=1
-        print('Teste : {}'.format(cont))
-        Playeing()
+        print('Voce venceu\n')
 
     elif game % 2 == 1 and choice in 'Ii':
         cont +=1
-        print('Teste : {}'.format(cont))
-        Playeing()
+        print('Voce venceu\n')
+
     else :
-        print('Game Over')
+        print('Game Over\n')
+        break
+
+print('Jogador venceu {} consecutiva(s)'.format(cont))
 
 
 
-    #elif (game % 2 == 1 and choice in 'Pp') or (game % 2 == 0 and choice in 'Ii'):
-    print('Jogador venceu {} consecutiva(s)'.format(cont))
 
 
-Playeing()
+
+
+
+
+
+
 
 
 
