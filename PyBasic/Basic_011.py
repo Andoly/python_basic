@@ -49,9 +49,9 @@ while True:
         register = str(input('Deseja adquirir um novo produto? [S / N] ')).strip().upper()[0]
     if register == 'N':
         break
-print(f'Saque de {withdraw} realizado com sucesso')
-print(f'\nO total da compra foi de R${total_spend}')
-print(f'Restou R$ {withdraw - total_spend}')
+print(f'\nSaque de {withdraw} realizado com sucesso')
+print(f'O total da compra foi de R${total_spend}')
 print(f'{product1000} custaram mais de R$ 1000')
 print(f'O produto mais barato foi {product_cheap} custando R$ {menor}')
+print(f'Restou R$ {withdraw - total_spend}')
 
