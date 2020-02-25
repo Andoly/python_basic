@@ -1,4 +1,5 @@
 # Ordenando em tempo real, sem usar o método sorted()
+
 lista5 = list()
 
 for i in range(0,5):
@@ -12,6 +13,5 @@ for i in range(0,5):
                 lista5.insert(pos, valor)
                 break
             pos +=1
-
 print(f'Exibindo a lista ordenada : {lista5}')
 
