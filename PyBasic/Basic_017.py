@@ -34,7 +34,6 @@ while True:
     break
 
 print(cad_Composto)
-
 print(f'O maior peso foi de {maior}Kg ')
 print(f'O menor peso foi de {menor}Kg')
 print(f'Foram cadastradas {cont} pessoas')
