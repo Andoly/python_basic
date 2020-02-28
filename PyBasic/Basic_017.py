@@ -23,12 +23,13 @@ while True:
         except ValueError:
             print('Peso invalido. Digite novamente')
 
-    resp = str(input('Deseja continuar? [S/N]')).upper()
-    if resp in 'N':
-        break
 
-print(f'\nLista composta : {cad_Composto}')
-print(f'O maior peso foi de {maior} Kg ')
-print(f'O menor peso foi de {menor} Kg')
+        resp = str(input('Deseja continuar? [S/N]')).upper()
+        if resp in 'N':
+    break
+
+print(cad_Composto)
+print(f'O maior peso foi de {maior}Kg ')
+print(f'O menor peso foi de {menor}Kg')
 print(f'Foram cadastradas {cont} pessoas')
 
