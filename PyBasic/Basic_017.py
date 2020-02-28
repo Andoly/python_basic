@@ -4,7 +4,6 @@ cont = 0
 maior = menor = 0
 while True:
     cadastro.append(str(input('Nome: ')))
-
     while True:
         try:
             cadastro.append(float(input('Peso: ')))
