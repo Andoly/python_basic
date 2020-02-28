@@ -24,9 +24,9 @@ while True:
             print('Peso invalido. Digite novamente')
 
 
-        resp = str(input('Deseja continuar? [S/N]')).upper()
-        if resp in 'N':
-    break
+    resp = str(input('Deseja continuar? [S/N]')).upper()
+    if resp in 'N':
+        break
 
 print(cad_Composto)
 print(f'O maior peso foi de {maior}Kg ')
