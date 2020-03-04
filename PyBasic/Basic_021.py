@@ -1,11 +1,29 @@
-estado = dict()
-brasil = list()
-for c in range(0,3):
-    estado['UF'] = str(input('Unidade Federativa: '))
-    estado['Sigla'] = str(input('Sigla do Estado: '))
-    brasil.append(estado.copy())
 
-for e in brasil:
-    for k,v in e.items():
-        print(v," ", end = ' ')
+resultado = dict()
+princ = list()
+while True:
+    resultado['Nome'] = str(input('Nome do aluno: '))
+    resultado['Media'] = float(input(f'Média obtida por {resultado["Nome"]}:'))
+
+    if resultado['Media'] >= 7:
+        resultado['Situação'] = 'Aprovado'
+    else:
+        resultado['Situação'] = 'Reprovado'
+
+    princ.append(resultado.copy())
+
+    while True:
+        answer = str(input('Deseja continuar? (S/N): ')).strip().upper()[0]
+        if answer in 'SN':
+            break
+    if answer == 'N':
+        break
+print(resultado)
+for resultado in princ:
+    for k,v in resultado.items():
+        print(f'{k} : {v} | ',end = ' ')
     print()
+
+
+
+
