@@ -1,0 +1,2 @@
+def vetor():
+ListaVetorial = list()
