@@ -1,6 +1,0 @@
-Andoly;23
-Gustavo;40
-Erika;29
-Claudia;36
-Seedord;44
-Jose;56
